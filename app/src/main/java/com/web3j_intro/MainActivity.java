@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private Web3j web3;
     //FIXME: Add your own password here
     private final String password = "medium";
-    private String walletPath;// = getFilesDir().getPath();
-    private File walletDir;// = new File(walletPath);
+    private String walletPath;
+    private File walletDir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
