@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     public void connectToEthNetwork(View v) {
         toastAsync("Connecting to Ethereum network...");
         // FIXME: Add your own API key here
-        web3 = Web3j.build(new HttpService("https://rinkeby.infura.io/v3/YOURKEY”));
+        web3 = Web3j.build(new HttpService("https://rinkeby.infura.io/v3/YOURKEY"));
         try {
             Web3ClientVersion clientVersion = web3.web3ClientVersion().sendAsync().get();
             if(!clientVersion.hasError()){
